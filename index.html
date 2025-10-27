@@ -25,7 +25,7 @@
             --github: #333;
             --twitter: #1DA1F2;
             --whatsapp: #25D366;
-            --instagram: #E1306C;
+            
         }
 
         .light-mode {
@@ -399,17 +399,14 @@
             background-color: var(--github);
         }
 
-        .social-icons a.twitter {
-            background-color: var(--twitter);
-        }
+        
 
         .social-icons a.whatsapp {
             background-color: var(--whatsapp);
         }
 
-        .social-icons a.instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-        }
+       
+
 
         /* About Section */
         #about {
@@ -607,7 +604,177 @@
         .timeline-content p:last-child {
             margin-bottom: 0;
         }
-        
+
+
+
+
+.edu-name {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ba9e9e;
+    margin: 0.6rem 0;
+    font-weight: 450;
+}
+
+.edu-link {
+    color: #9150e0;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    font-style: italic;
+}
+
+.edu-link:hover {
+    background-color: #f5f5f5;
+    color: #000;
+    font-style: normal;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .edu-exp-container {
+        gap: 2rem;
+    }
+    
+    .edu-column {
+        padding: 2rem;
+    }
+.exp-column {
+        padding: 2rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #education-experience {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .edu-exp-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .edu-column {
+        padding: 1.8rem;
+    }
+    .exp-column {
+        padding: 2rem;
+    }
+    
+    .edu-column h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.9rem;
+    }
+    
+    .timeline-content {
+        padding: 1.2rem;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .edu-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #education-experience {
+        padding: 2rem 0;
+    }
+     .edu-exp-container {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+    
+    .container {
+        padding: 0 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .edu-column {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .exp-column {
+        padding: 2rem;
+    }
+    
+    .edu-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .timeline {
+        padding-left: 1rem;
+    }
+    
+    .timeline-item {
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.4rem;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .timeline-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 1rem;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+        border-left-width: 3px;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+    
+    .edu-link {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-content p:last-child {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
 
         /* Skills Section */
         #skills {
@@ -1120,17 +1287,14 @@
             background-color: var(--github);
         }
 
-        .footer-social a.twitter {
-            background-color: var(--twitter);
-        }
+       
 
         .footer-social a.whatsapp {
             background-color: var(--whatsapp);
         }
 
-        .footer-social a.instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-        }
+       
+     
 
         .copyright {
             font-size: 0.9rem;
@@ -1291,17 +1455,17 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 992px) {
+        @media (max-width: 997px) {
             .hero-content,
             .about-content {
-                flex-direction: column;
+                flex-direction:column;
             }
 
             .hero-text,
             .about-text {
                 padding-right: 0;
-                margin-bottom: 50px;
-                text-align: center;
+                margin-bottom:40px;
+                text-align:center;
             }
 
             .hero-buttons {
@@ -1469,7 +1633,7 @@
 through the power of data and analytics</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        <a href="https://www.upwork.com/freelancers/~0153582728789d8289?mp_source=share" class="btn btn-outline">Hire Me</a>
                     </div>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/abdullahalfahad01" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -1532,7 +1696,11 @@ through the power of data and analytics</p>
                             <div class="timeline-date">2022 - Present</div>
                             <div class="timeline-content">
                                 <h4>Bachelor of Science in Statistics</h4>
-                                <p>Begum Rokeya University, Rangpur</p>
+                                 <p class="edu-name">
+                                        <a href="https://www.brur.ac.bd/" class="edu-link">
+                                        Begum Rokeya University, Rangpur
+                                                                             </a>
+                                                                                    </p>
                                 <p>Currently in 3rd year with focus on data analysis and statistical modeling</p>
                             </div>
                         </div>
@@ -1540,7 +1708,7 @@ through the power of data and analytics</p>
                             <div class="timeline-date">2019 - 2021</div>
                             <div class="timeline-content">
                                 <h4>Higher Secondary Certificate (HSC)</h4>
-                                <p>Science Group</p>
+                                <p class="edu-name"> <a href="https://www.savarmodelcollege.edu.bd/"  class="edu-link">Savar Model College (Science)</a></p>
                                 <p>GPA: 5.00/5.00</p>
                             </div>
                         </div>
@@ -1548,8 +1716,8 @@ through the power of data and analytics</p>
                             <div class="timeline-date">2017 - 2019</div>
                             <div class="timeline-content">
                                 <h4>Secondary School Certificate (SSC)</h4>
-                                <p>Science Group</p>
-                                <p>GPA: 5.00/5.00</p>
+                                <p  class="edu-name">  <a href="https://www.facebook.com/GBS08/"  class="edu-link">Gayan Bikash School (Science)</a></p>
+                                <p>GPA: 4.72/5.00</p>
                             </div>
                         </div>
                     </div>
@@ -1559,31 +1727,36 @@ through the power of data and analytics</p>
                 <div class="exp-column">
                     <h3><i class="fas fa-briefcase"></i> Experience</h3>
                     <div class="timeline">
+                       
+                       
                         <div class="timeline-item">
-                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-date">Oct 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Research Assistant</h4>
+                                <p class="edu-name"> <a href="https://www.researchgate.net/lab/Global-Intelligence-Researcher-Academy-GIRA-Mejbah-Ahammad"  class="edu-link">GIRA</a></p>
+                                <p>Focused on developing and applying advanced ML and Deep Learning models for data analysis and research. Experienced in Python, TensorFlow, and PyTorch, with a strong interest in leveraging AI to generate innovative and data-driven insights.</p>
+                            </div>
+                        </div>
+
+
+    
+                        <div class="timeline-item">
+                            <div class="timeline-date">Aug 2024 - Present</div>
                             <div class="timeline-content">
                                 <h4>Data Integration & Dashboard Specialist</h4>
-                                <p>Info Logic Solutions</p>
+                                <p class="edu-name"> <a href="https://infologicsolution.com/"  class="edu-link">Info Logic Solutions </a></p>
                                 <p>Designing and developing insightful dashboards for data-driven decision making. Integrating multiple data sources and creating interactive visualizations.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-date">Jan 2025 - Present</div>
                             <div class="timeline-content">
                                 <h4>Freelance Data Analyst</h4>
-                                <p>Upwork</p>
+                                <p class="edu-name"> <a href="https://www.upwork.com/freelancers/~0153582728789d8289?mp_source=share"  class="edu-link"> Upwork </a></p>
                                 <p>Providing data analysis, visualization, and business reporting services to clients. Specializing in Excel, Power BI, and SQL-based solutions for SMEs and startups.</p>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">2022 - 2023</div>
-                            <div class="timeline-content">
-                                <h4>Data Analysis Intern</h4>
-                                <p>Various Projects</p>
-                                <p>Worked on multiple academic and personal projects involving statistical analysis, data cleaning, and visualization using Python, R, and Excel.</p>
-                            </div>
-                        </div>
-                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -2097,6 +2270,8 @@ through the power of data and analytics</p>
                         
                         <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                         
+                        
+                        
                     </div>
                 </div>
                 <div class="contact-form">
@@ -2139,6 +2314,7 @@ through the power of data and analytics</p>
                     <a href="https://github.com/AbdullahAlFahad01" class="github"><i class="fab fa-github"></i></a>
                     
                     <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    
                     
                 </div>
                 <div class="copyright">
@@ -2393,6 +2569,7 @@ through the power of data and analytics</p>
     </script>
 </body>
 </html>
+
 
 
 
