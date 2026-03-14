@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah Al Fahad | Data Scientist & Analyst</title>
-<link rel="icon" href="about.png">
+<title>Abdullah Al Fahad | Data Scientist &amp; Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -61,7 +60,7 @@ html.light body::before{opacity:.008}
 /* ── RESETS ── */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--b);background:var(--bg);color:var(--tx);overflow-x:hidden;cursor:none;transition:background .45s ease,color .45s ease}
+body{font-family:var(--b);background:var(--bg);color:var(--tx);overflow-x:hidden;cursor:none;transition:background .4s,color .4s}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--ac);border-radius:2px}
 img{max-width:100%}
 
@@ -119,13 +118,11 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:17px 4
 .n-hire:hover{opacity:.88;box-shadow:0 0 22px var(--aglow);transform:translateY(-1px)}
 
 /* MODE TOGGLE */
-.mode-btn{display:flex;align-items:center;gap:7px;padding:7px 14px;border-radius:20px;background:var(--card);border:1px solid var(--bdr);cursor:pointer;color:var(--mu);font-size:.82rem;font-family:var(--b);font-weight:600;transition:all .3s;flex-shrink:0;letter-spacing:.02em;white-space:nowrap}
-.mode-btn:hover{border-color:var(--ac);color:var(--ac);background:var(--adim);transform:translateY(-1px)}
-.mode-btn i{font-size:.85rem;transition:transform .4s}
-.mode-btn:hover i{transform:rotate(20deg)}
+.mode-btn{width:38px;height:38px;border-radius:9px;background:var(--card);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--mu);font-size:.9rem;transition:all .3s;flex-shrink:0}
+.mode-btn:hover{border-color:var(--ac);color:var(--ac);background:var(--adim)}
 html.light .mode-btn .ico-moon{display:none}
-html.light .mode-btn .ico-sun{display:flex;align-items:center;gap:7px}
-.ico-moon{display:flex;align-items:center;gap:7px}.ico-sun{display:none}
+html.light .mode-btn .ico-sun{display:flex}
+.ico-moon{display:flex}.ico-sun{display:none}
 
 .nav-r{display:flex;align-items:center;gap:10px}
 .hbg{display:none;flex-direction:column;gap:5px;cursor:pointer}
@@ -286,6 +283,16 @@ html.light .stk{background:rgba(248,249,250,.9);color:var(--ac)}
 
 /* ── MY STORY SECTION ── */
 #story{background:var(--bg2)}
+.story-intro{display:grid;grid-template-columns:1fr .82fr;gap:68px;align-items:center;margin-bottom:68px}
+.story-intro-h{font-family:var(--d);font-size:clamp(2.2rem,3.5vw,3.2rem);font-weight:700;letter-spacing:-.03em;color:var(--wh);line-height:1.06;font-style:italic;margin-bottom:16px}
+.story-intro-h span{color:var(--ac);font-style:normal}
+.story-intro-p{color:var(--mu);font-size:.92rem;line-height:1.78;margin-bottom:14px}
+.story-intro-p strong{color:var(--tx);font-weight:600}
+.story-quote{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:24px 26px;position:relative;overflow:hidden}
+.story-quote::before{content:'\u201C';position:absolute;top:8px;right:14px;font-family:var(--d);font-size:5.5rem;color:var(--adim);line-height:1;pointer-events:none}
+.story-quote p{font-family:var(--d);font-size:1.06rem;color:var(--tx);line-height:1.55;font-style:italic}
+.story-quote cite{display:block;margin-top:9px;font-family:var(--m);font-size:.6rem;color:var(--ac);letter-spacing:.1em}
+
 /* Story Image+Text Slider */
 .story-slider-wrap{position:relative}
 .story-slides{overflow:hidden;border-radius:20px;border:1px solid var(--bdr)}
@@ -314,13 +321,6 @@ html.light .stk{background:rgba(248,249,250,.9);color:var(--ac)}
 .sl-dot.on{background:var(--ac);width:20px;border-radius:3.5px}
 .sl-btn{width:40px;height:40px;border-radius:8px;background:var(--card);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;color:var(--mu);cursor:pointer;transition:all .3s;font-size:.82rem}
 .sl-btn:hover{background:var(--ac);color:#000;border-color:var(--ac)}
-/* story tags row */
-.s-tags{display:flex;flex-wrap:wrap;gap:8px;padding-top:14px;border-top:1px solid var(--bdr)}
-.s-tag{display:inline-flex;align-items:center;gap:5px;font-family:var(--m);font-size:.68rem;color:var(--mu);background:var(--bg2);border:1px solid var(--bdr);padding:4px 10px;border-radius:20px}
-.s-tag i{color:var(--ac);font-size:.62rem}
-/* story auto-progress bar */
-.story-progress{height:2px;background:var(--bdr);border-radius:1px;margin-top:14px;overflow:hidden}
-.story-progress-fill{height:100%;background:var(--ac);border-radius:1px;width:0%;transition:width .12s linear}
 
 /* ── REVIEWS ── */
 #reviews{background:var(--bg)}
@@ -429,7 +429,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
   .hbg{display:flex}
   .nl{position:fixed;top:0;right:-100%;width:70%;height:100vh;background:var(--nav-bg);backdrop-filter:blur(28px);flex-direction:column;justify-content:center;align-items:center;gap:28px;transition:right .4s var(--ease);border-left:1px solid var(--bdr);z-index:999}
   .nl.on{right:0}.nl a{font-size:1.05rem}
-  .hero-g,.ag,.ctg{grid-template-columns:1fr;gap:44px}
+  .hero-g,.ag,.ctg,.story-intro{grid-template-columns:1fr;gap:44px}
   .tlg{grid-template-columns:1fr;gap:36px}
   .skg,.proj-g{grid-template-columns:repeat(2,1fr)}
   .rev-slide{flex:0 0 calc(100% - 0px);margin-right:0}
@@ -487,8 +487,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
     </ul>
     <div class="nav-r">
       <button class="mode-btn" id="modeBtn" title="Toggle light/dark mode" onclick="toggleMode()">
-        <span class="ico-moon"><i class="fas fa-moon"></i> Dark</span>
-        <span class="ico-sun"><i class="fas fa-sun"></i> Light</span>
+        <span class="ico-moon"><i class="fas fa-moon"></i></span>
+        <span class="ico-sun"><i class="fas fa-sun"></i></span>
       </button>
       <div class="hbg" id="hbg" onclick="tN()"><span></span><span></span><span></span></div>
     </div>
@@ -637,7 +637,25 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
 <!-- MY STORY -->
 <section id="story">
   <div class="ctr">
-    <div class="shd rv"><div class="stag">MY STORY</div><h2 class="stitle">Life Beyond <span>Data</span></h2><p class="ssub">The chapters, passions, and turning points that shaped who I am today.</p></div>
+    <div class="shd rv"><div class="stag">MY STORY</div><h2 class="stitle">Life Beyond <span>Data</span></h2><p class="ssub">The moments, passions, and experiences that shaped who I am today.</p></div>
+    <div class="story-intro rv">
+      <div>
+        <div class="stag" style="justify-content:flex-start;margin-bottom:12px">ABOUT THE JOURNEY</div>
+        <h3 class="story-intro-h">More than a <span>Data Scientist</span></h3>
+        <p class="story-intro-p">Growing up in Savar, Dhaka, I was always fascinated by patterns — in numbers, in nature, in human behavior. While others dreaded mathematics, I found it comforting. It felt like the universe was speaking a language I actually understood.</p>
+        <p class="story-intro-p">From a <strong>perfect 5.00 HSC score</strong> to research labs, from club leadership to freelancing across continents — every chapter of my story taught me something numbers alone never could.</p>
+        <div class="aacts" style="margin-top:24px">
+          <a href="#contact" class="bp">Work With Me</a>
+          <a href="Resume.pdf" download class="bs">Download CV</a>
+        </div>
+      </div>
+      <div>
+        <div class="story-quote">
+          <p>"Data is not just numbers — it is the language the world speaks without knowing it. I chose to learn that language fluently."</p>
+          <cite>&#8212; Abdullah Al Fahad</cite>
+        </div>
+      </div>
+    </div>
 
     <!-- IMAGE + TEXT SLIDER -->
     <div class="story-slider-wrap rv">
@@ -650,67 +668,67 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
               <div class="s-img-ph" style="display:none"><i class="fas fa-seedling"></i><span>THE BEGINNING</span></div>
             </div>
             <div class="s-txt">
-              <div class="s-num">01 / 05</div>
+              <div class="s-num">01</div>
               <div class="s-cat">Origin Story</div>
               <h3 class="s-h">Where It All <span>Began</span></h3>
-              <p class="s-p">Growing up in Savar, Dhaka, I was captivated by patterns everywhere — in numbers, in nature, in human behavior. While others feared mathematics, I found it oddly comforting. A single statistics class in school <strong>changed everything</strong>. I knew data was my calling, my language, and my competitive edge for life.</p>
-              <div class="s-tags"><span class="s-tag"><i class="fas fa-map-marker-alt"></i> Savar, Dhaka</span><span class="s-tag"><i class="fas fa-calendar-alt"></i> 2017</span></div>
+              <p class="s-p">Growing up in Savar, Dhaka, I was captivated by patterns everywhere. Mathematics felt like a superpower — a language the universe speaks. A single statistics class in school <strong>changed everything</strong>. I knew data was my calling, my purpose, and my competitive edge.</p>
+              <div class="s-meta"><i class="fas fa-map-marker-alt"></i> Savar, Dhaka &nbsp;&middot;&nbsp; <i class="fas fa-calendar-alt"></i> 2017 &mdash; Early Years</div>
             </div>
           </div>
 
           <div class="story-slide">
             <div class="s-img">
-              <img src="fahad_bg.png" alt="Perfect Score" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="fahad_bg.png" alt="Academic Excellence" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="s-img-ph" style="display:none"><i class="fas fa-award"></i><span>PERFECT SCORE</span></div>
             </div>
             <div class="s-txt">
-              <div class="s-num">02 / 05</div>
+              <div class="s-num">02</div>
               <div class="s-cat">Academic Excellence</div>
               <h3 class="s-h">The <span>Perfect Score</span></h3>
-              <p class="s-p">Achieving a <strong>perfect 5.00 GPA in HSC</strong> from Savar Model College, Science stream, was the result of years of discipline, curiosity, and late-night study sessions. It taught me that hard work compounds — exactly like good data models. Excellence became a habit, not a lucky accident.</p>
-              <div class="s-tags"><span class="s-tag"><i class="fas fa-graduation-cap"></i> Savar Model College</span><span class="s-tag"><i class="fas fa-star"></i> GPA 5.00 / 5.00</span></div>
+              <p class="s-p">Achieving a <strong>perfect 5.00 GPA in HSC</strong> from Savar Model College was the result of years of discipline, curiosity, and late nights. It taught me that hard work compounds — exactly like good data models. Excellence became a habit, not an accident.</p>
+              <div class="s-meta"><i class="fas fa-graduation-cap"></i> Savar Model College &nbsp;&middot;&nbsp; <i class="fas fa-calendar-alt"></i> 2021</div>
             </div>
           </div>
 
           <div class="story-slide">
             <div class="s-img">
-              <img src="Google.png" alt="University Life" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="s-img-ph" style="display:none"><i class="fas fa-university"></i><span>UNIVERSITY</span></div>
+              <img src="Google.png" alt="University" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="s-img-ph" style="display:none"><i class="fas fa-university"></i><span>UNIVERSITY LIFE</span></div>
             </div>
             <div class="s-txt">
-              <div class="s-num">03 / 05</div>
+              <div class="s-num">03</div>
               <div class="s-cat">University Life</div>
               <h3 class="s-h">The University <span>Chapter</span></h3>
-              <p class="s-p">Arriving at Begum Rokeya University to study Statistics was a turning point. I joined the <strong>Statistics Department Club</strong>, participated in data competitions, organized peer-learning sessions, and attended national seminars. Late nights debugging R code and building my first real dataset — this is where the data scientist in me was truly born.</p>
-              <div class="s-tags"><span class="s-tag"><i class="fas fa-university"></i> BRUR, Rangpur</span><span class="s-tag"><i class="fas fa-calendar-alt"></i> 2023 — Present</span></div>
+              <p class="s-p">At Begum Rokeya University studying Statistics, I joined the <strong>Statistics Department Club</strong>, participated in data competitions, organized peer-learning sessions, and attended national seminars. Late nights debugging R code — this is where the data scientist in me was truly born.</p>
+              <div class="s-meta"><i class="fas fa-university"></i> BRUR, Rangpur &nbsp;&middot;&nbsp; <i class="fas fa-calendar-alt"></i> 2023 &mdash; Present</div>
             </div>
           </div>
 
           <div class="story-slide">
             <div class="s-img">
-              <img src="Business.png" alt="ML Research" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="Business.png" alt="Research" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="s-img-ph" style="display:none"><i class="fas fa-flask"></i><span>RESEARCH</span></div>
             </div>
             <div class="s-txt">
-              <div class="s-num">04 / 05</div>
-              <div class="s-cat">Research &amp; Machine Learning</div>
-              <h3 class="s-h">Diving Into <span>ML Research</span></h3>
-              <p class="s-p">Joining GIRA as a Research Assistant opened a whole new dimension. Working with <strong>Deep Learning models, collaborating with researchers globally</strong>, and witnessing how data can predict diseases and model social behavior — I was completely hooked. Research became my passion, not merely a job title.</p>
-              <div class="s-tags"><span class="s-tag"><i class="fas fa-microscope"></i> GIRA Research Lab</span><span class="s-tag"><i class="fas fa-calendar-alt"></i> Oct 2025</span></div>
+              <div class="s-num">04</div>
+              <div class="s-cat">Research &amp; ML</div>
+              <h3 class="s-h">Diving Into <span>Machine Learning</span></h3>
+              <p class="s-p">Joining GIRA as a Research Assistant opened a whole new dimension. Working with <strong>Deep Learning models, collaborating with global researchers</strong>, and seeing how data could predict diseases and model social behavior — I was hooked. Research became my passion, not just a job.</p>
+              <div class="s-meta"><i class="fas fa-microscope"></i> GIRA Research Lab &nbsp;&middot;&nbsp; <i class="fas fa-calendar-alt"></i> Oct 2025</div>
             </div>
           </div>
 
           <div class="story-slide">
             <div class="s-img">
-              <img src="Mobile.jpg" alt="Freelancing on Upwork" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="Mobile.jpg" alt="Freelancing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="s-img-ph" style="display:none"><i class="fas fa-laptop-code"></i><span>FREELANCING</span></div>
             </div>
             <div class="s-txt">
-              <div class="s-num">05 / 05</div>
+              <div class="s-num">05</div>
               <div class="s-cat">Entrepreneurial Spirit</div>
               <h3 class="s-h">The <span>Upwork Journey</span></h3>
-              <p class="s-p">Taking the leap onto Upwork while still a student was terrifying — but one of the best decisions I ever made. <strong>Clients from the US, UK, and Germany were trusting a student from Bangladesh</strong> with their real business data. That responsibility pushed me to level up fast. Today: 15+ satisfied clients, consistent 5-star reviews, and repeat business.</p>
-              <div class="s-tags"><span class="s-tag"><i class="fas fa-briefcase"></i> Upwork</span><span class="s-tag"><i class="fas fa-users"></i> 15+ Clients Worldwide</span></div>
+              <p class="s-p">Taking the leap onto Upwork while still a student was scary — but one of the best decisions I ever made. <strong>People from the US, UK, and Germany were trusting a student from Bangladesh</strong> with their business data. That responsibility made me level up fast. Today: 15+ clients, 5-star ratings, repeat business.</p>
+              <div class="s-meta"><i class="fas fa-briefcase"></i> Upwork Platform &nbsp;&middot;&nbsp; <i class="fas fa-calendar-alt"></i> Jan 2025</div>
             </div>
           </div>
 
@@ -725,7 +743,6 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
         <div class="sl-dot" onclick="goStory(4)"></div>
         <div class="sl-btn" onclick="slideStory(1)"><i class="fas fa-arrow-right"></i></div>
       </div>
-      <div class="story-progress"><div class="story-progress-fill" id="storyBar"></div></div>
     </div>
   </div>
 </section>
@@ -794,7 +811,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:44px 0 24px
         <p class="ct-sub">Open to new projects, freelance opportunities, and research collaborations. Reach out and let's get started.</p>
         <div class="ct-items">
           <div class="ct-it"><div class="ct-ico"><i class="fas fa-map-marker-alt"></i></div><div><div class="ct-lbl">Location</div><div class="ct-val">Savar, Dhaka, Bangladesh</div></div></div>
-          <div class="ct-it"><div class="ct-ico"><i class="fas fa-envelope"></i></div><div><div class="ct-lbl">Email</div><div class="ct-val"><a href="mailto:fahadbinshah34@gmail.com" style="color:inherit;text-decoration:none">fahadbinshah34@gmail.com</a></div></div></div>
+          <div class="ct-it"><div class="ct-ico"><i class="fas fa-envelope"></i></div><div><div class="ct-lbl">Email</div><div class="ct-val">fahadbinshah34@gmail.com</div></div></div>
           <div class="ct-it"><div class="ct-ico"><i class="fas fa-phone"></i></div><div><div class="ct-lbl">Phone</div><div class="ct-val">+880 1641768316</div></div></div>
           <div class="ct-it"><div class="ct-ico"><i class="fas fa-briefcase"></i></div><div><div class="ct-lbl">Upwork</div><div class="ct-val">Top Rated Freelancer</div></div></div>
         </div>
@@ -932,9 +949,6 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
 
 // ── STORY SLIDER ──
 let si=0;const STOTAL=5;
-const storyBar=document.getElementById('storyBar');
-let storyProg=0,storyTimer=null,storyAnim=null;
-
 function showStory(i){
   const track=document.getElementById('storyTrack');
   const slides=track.querySelectorAll('.story-slide');
@@ -942,23 +956,10 @@ function showStory(i){
   track.style.transform=`translateX(-${si*100}%)`;
   slides.forEach((s,idx)=>s.classList.toggle('active',idx===si));
   document.querySelectorAll('.sl-dot').forEach((d,idx)=>d.classList.toggle('on',idx===si));
-  resetStoryProgress();
 }
 function slideStory(d){showStory(si+d);}
 function goStory(i){showStory(i);}
-
-function resetStoryProgress(){
-  clearInterval(storyTimer);cancelAnimationFrame(storyAnim);
-  storyProg=0;storyBar.style.transition='none';storyBar.style.width='0%';
-  const dur=6200,step=50;
-  storyTimer=setInterval(()=>{
-    storyProg+=step/dur*100;
-    if(storyProg>=100){storyProg=100;clearInterval(storyTimer);slideStory(1);}
-    storyBar.style.transition='width '+step+'ms linear';
-    storyBar.style.width=storyProg+'%';
-  },step);
-}
-resetStoryProgress();
+setInterval(()=>slideStory(1),6200);
 
 // ── REVIEW SLIDER ──
 const RTRACK=document.getElementById('revTrack'),RDOTS=document.getElementById('rsDots');
@@ -986,4 +987,10 @@ function moveRev(d){
 function goRev(i){ri=i;posRev();}
 window.addEventListener('resize',setupRev);
 setTimeout(setupRev,100);
-setInterval(()=>moveRev(1),5000)
+setInterval(()=>moveRev(1),5000);
+
+// ── SMOOTH SCROLL ──
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
+</script>
+</body>
+</html>
